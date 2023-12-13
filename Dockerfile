@@ -13,7 +13,5 @@ RUN npm install
 # Build the Next.js application
 RUN npm run build
 
-#RUN npm run start
-
 # Define the command to run your app
 CMD ["npm", "run", "dev"]
