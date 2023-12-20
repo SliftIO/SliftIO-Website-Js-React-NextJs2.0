@@ -57,7 +57,7 @@ const Hero = () => (
           </p>
           <div className='flex max-w-max gap-x-10 mt-10 items-center mb-12 mx-auto lg:mx-0'>
             <button className='button-63 font-medium'>Orçamento</button>
-            <a href='#' className='text-gradient btn-link text-white font-medium'>
+            <a href='mailto:contato@sliftio.com' className='text-gradient btn-link text-white font-medium'>
               Entrar em Contato
             </a>
           </div>
