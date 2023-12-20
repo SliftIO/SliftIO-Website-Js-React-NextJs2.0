@@ -58,13 +58,15 @@ export const insights = [
     title: 'Portal Do Aluno: Studio Musical Matheus Andreozzi',
     subtitle:
         'É uma plataforma desenvolvida em C# e ASP.NET que tem como objetivo levar a experiência da escola de música Matheus Andreozzi diretamente para os alunos.',
+    link: "https://sistema.matheusandreozzi.com.br/",
   },
   {
     imgUrl: '/EmpregosGoianiaERegiao.png',
     title: 'Site Sistema de Vagas: Empregos Goiânia e Região',
     subtitle:
         'Criação de uma aplicação web de vagas personalizadas, proporcionando uma experiência única e eficaz para os usuários que vem do Instagram e mecanismos de pesquisa.',
-  },
+    link: "https://empregosgoianiaeregiao.com.br/",
+      },
   /*{
     imgUrl: '/planet-08.png',
     title: 'EducaKids: Plataforma Educacional Interativa',

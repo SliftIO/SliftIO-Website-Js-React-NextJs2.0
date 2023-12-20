@@ -4,15 +4,19 @@ import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({ id, title, index, active, handleClick, description }) => {
-  const [showMessage, setShowMessage] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowMessage(true);
-    }, 9000);
+    if (active === id) {
+      const timeout = setTimeout(() => {
+        setShowDescription(true);
+      }, 500);
 
-    return () => clearTimeout(timeout);
-  }, []);
+      return () => clearTimeout(timeout);
+    } else {
+      setShowDescription(false);
+    }
+  }, [active, id]);
 
   return (
     <motion.div
@@ -29,7 +33,7 @@ const ExploreCard = ({ id, title, index, active, handleClick, description }) => 
         </h3>
       ) : (
         <div className="absolute bottom-0 p-8 pt-0 flex justify-start w-full flex-col rounded-b-[24px]">
-          <h4 className={`transition-opacity duration-700 ${showMessage ? 'opacity-100' : 'opacity-0'} sm:text-2xl text-white`} style={{ marginBottom: '10px' }}>
+          <h4 className={`transition-opacity duration-700 ${showDescription ? 'opacity-100' : 'opacity-0'} sm:text-2xl text-white`} style={{ marginBottom: '10px' }}>
             {description}
           </h4>
           <div className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}>

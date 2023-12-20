@@ -39,7 +39,7 @@ const Footer = () => (
             SliftIO
           </h4>
           <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2023 SlfiftIO. Todos os direitos reservados.
+            Copyright © 2023 SliftIO. Todos os direitos reservados.
           </p>
 
           <div className="flex gap-4">
