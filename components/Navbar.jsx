@@ -23,14 +23,14 @@ const Navbar = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { y: -20, opacity: 0 },
-    show: { y: 0, opacity: 1 }
+    show: { y: 0, opacity: 1 },
   };
 
   return (
@@ -56,12 +56,12 @@ const Navbar = () => {
           />
           {dropdownOpen && (
             <motion.div
-            className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white bg-opacity-10 backdrop-blur-md ring-1 ring-black ring-opacity-5 overflow-hidden z-50"
-            style={{ backdropFilter: 'blur(10px)' }}
-            variants={dropdownVariants}
-            initial="hidden"
-            animate="show"
-          >
+              className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white bg-opacity-10 backdrop-blur-md ring-1 ring-black ring-opacity-5 overflow-hidden z-50"
+              style={{ backdropFilter: 'blur(10px)' }}
+              variants={dropdownVariants}
+              initial="hidden"
+              animate="show"
+            >
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <motion.button onClick={() => navigateTo('/')} className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-gray-900" role="menuitem" variants={itemVariants}>Home</motion.button>
                 <motion.button onClick={() => navigateTo('/blog')} className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-gray-900" role="menuitem" variants={itemVariants}>Blog</motion.button>

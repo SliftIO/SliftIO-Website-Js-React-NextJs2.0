@@ -13,9 +13,8 @@ const ExploreCard = ({ id, title, index, active, handleClick, description }) => 
       }, 500);
 
       return () => clearTimeout(timeout);
-    } else {
-      setShowDescription(false);
     }
+    setShowDescription(false);
   }, [active, id]);
 
   return (

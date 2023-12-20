@@ -1,5 +1,5 @@
-import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Insights, WhatsNew, World } from '../sections';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import NotFound from '../sections/NotFound';
 
 const NotFoundPage = () => (

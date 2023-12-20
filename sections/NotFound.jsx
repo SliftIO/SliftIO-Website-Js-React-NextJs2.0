@@ -51,7 +51,7 @@ const NotFound = () => (
                             Voltar a página inicial!
                         </a>    
                     </div>
-                </div>
+                </div>2
                 {/* Image */}
                 <FloatingElement>
                     <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[502px]'>
